@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Tarea_Formulario</string>
+    <string name="formulario_fic">Formulario FIC</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellido_paterno">Apellido Paterno</string>
+    <string name="apellido_materno">Apellido Materno</string>
+    <string name="numero_telefonico">Numero Telefonico</string>
+    <string name="correo_electronico">Correo Electronico</string>
+    <string name="logo">logo</string>
+    <string name="enviar_datos">Enviar Datos</string>
+</resources>

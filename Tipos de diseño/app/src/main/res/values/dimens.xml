@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <resources>
+
+        <dimen name="space_s">8dp</dimen>
+        <dimen name="space_m">16dp</dimen>
+        <dimen name="space_l">24dp</dimen>
+        <dimen name="space_xl">32dp</dimen>
+
+
+        <dimen name="margin_logo_to_field">24dp</dimen>
+    </resources>
+
+
+
+</resources>

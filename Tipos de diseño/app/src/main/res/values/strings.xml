@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="hint_username">Usuario</string>
+    <string name="hint_contraseña">Contraseña</string>
+    <string name="hint_iniciars">Iniciar Sesion</string>
+    <string name="proporciona_tu_nombre_de_usuario">Proporciona tu nombre de usuario</string>
+
+
+</resources>

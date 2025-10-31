@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/formulario_fic"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="@dimen/texto_titulo"
+        android:layout_marginTop="@dimen/margin_general"
+        />
+
+    <ImageView
+        android:id="@+id/im_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/fic"
+        app:layout_constraintTop_toBottomOf="@id/tv_titulo"
+        android:layout_marginTop="@dimen/margin_general"
+        />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/im_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="16dp"
+        app:dividerThickness="2dp"
+        app:dividerColor="@color/Cafe_Fic" />
+
+
+    <EditText
+        android:id="@+id/et_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@id/divider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/margin_general"
+        android:layout_marginEnd="@dimen/margin_general"
+        android:layout_marginTop="@dimen/margin_general"
+        android:drawableEnd="@drawable/icono_nombre"/>
+
+    <EditText
+        android:id="@+id/et_ap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/apellido_paterno"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@id/et_nombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/margin_general"
+        android:layout_marginEnd="@dimen/margin_general"
+        android:drawableEnd="@drawable/icono_nombre"/>
+
+    <EditText
+        android:id="@+id/et_am"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/apellido_materno"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@id/et_ap"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/margin_general"
+        android:layout_marginEnd="@dimen/margin_general"
+        android:drawableEnd="@drawable/icono_nombre"/>
+
+    <EditText
+        android:id="@+id/et_ce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/correo_electronico"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@id/et_am"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/margin_general"
+        android:layout_marginEnd="@dimen/margin_general"
+        android:drawableEnd="@drawable/icono_email"/>
+
+    <EditText
+        android:id="@+id/et_nt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/numero_telefonico"
+        android:inputType="phone"
+        app:layout_constraintTop_toBottomOf="@id/et_ce"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/margin_general"
+        android:layout_marginEnd="@dimen/margin_general"
+        android:drawableEnd="@drawable/icono_celular"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enviar_datos"
+        app:layout_constraintTop_toBottomOf="@id/et_nt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/margin_general"
+        android:backgroundTint="@color/Cafe_Fic"
+        />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
