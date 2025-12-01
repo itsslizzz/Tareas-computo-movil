@@ -16,7 +16,7 @@ Permite:
  Instrucciones de instalación y ejecución: 
  1- clonar este repo de github 
  2- Elegir la carpeta del proyecto correspondiente (llamada tarea1)
- 3- Botón Run ▶ en Android Studio
+ 3- Botón Run  en Android Studio
  4- Elegir el dispositivo / emulador
 
  Una vez instalada, el usuario vera la pantalla principal con las cards de las tareas, al principio tendra que crear su primera tarea, con el simbolo de + que esta situado 
