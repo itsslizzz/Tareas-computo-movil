@@ -46,7 +46,79 @@ Permite:
  <img width="338" height="727" alt="image" src="https://github.com/user-attachments/assets/11d059eb-aa15-490c-b2b7-c33e6e5b989f" /> cambiando la tarea de interfaz a programacion
  <img width="321" height="718" alt="image" src="https://github.com/user-attachments/assets/d2a4f6c8-1642-424b-816b-43ca07f4eeef" /> cambio realizado
  <img width="164" height="358" alt="image" src="https://github.com/user-attachments/assets/e0596274-9cd9-4e3a-b9c7-85e78e474c5b" /> borrar tarea de programacion
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Nombre del proyecto:Tarea 2 Notebook
+Breve descripción: Aplicación Android sencilla para crear categorias con sus notas 1:N
+Permite:
+- Agregar una categoria
+- Agregar Notas a las categorias 
+- Filtrar notas por categoria / buscar una nota con base a su titulo o contenido
 
+Instrucciones de instalación y ejecución: 
+ 1- clonar este repo de github 
+ 2- Elegir la carpeta del proyecto correspondiente (llamada tarea2)
+ 3- Botón Run  en Android Studio
+ 4- Elegir el dispositivo / emulador
+
+ Una vez instalada, el usuario vera la pantalla principal vacia, tendra que agregar una categoria, una vez creada, puede añadir una nota en la que tiene que llenar datos como (titulo, contenido, fecha y asociar esa nota a una categoria existente). En la pantalla principal se mostraran las cards con los datos de la nota y la categoria a la que pertenece. El usuario puede filtrar las notas por una categoria (en el spinner se muestran las categorias y una vez que seleccione una, el sistema muestra todas las notas de esa categoria) o bien, buscar una nota en la barra de busqueda ya sea por el titulo o contenido de la nota. 
+
+ Estructura de la base de datos:
+ @Entity  (tableName = "Categories")
+public class Category {
+
+    @PrimaryKey (autoGenerate = true)
+    public int category_id;
+
+    @ColumnInfo (name = "category_name")
+    public String category_name;
+
+
+ @Entity (tableName = "Notes", foreignKeys = @ForeignKey
+        (entity = Category.class, parentColumns = "category_id",
+        childColumns = "category_id"))
+public class Note {
+    @PrimaryKey (autoGenerate = true)
+    public int note_id;
+
+    @ColumnInfo (name = "note_title")
+    public String note_title;
+    @ColumnInfo (name = "category_id")
+    public int category_id;
+    @ColumnInfo (name = "note_content")
+    public String note_content;
+
+    @ColumnInfo (name = "created_at")
+    public  String created_at;
+
+ como podemos ver, se muestra una relacion de 1:N, es decir, una categoria puede tener varias notas.
+ Para separar responsabilidades se uso MVC (modelo vista controlador) 
+
+ App sin categorias y notas 
+ <img width="330" height="719" alt="image" src="https://github.com/user-attachments/assets/8e634944-a045-452f-a72b-71a3cae89db0" />
+ Añadir una categoria (computo movil)
+ <img width="349" height="721" alt="image" src="https://github.com/user-attachments/assets/c7a597ca-ec50-49fe-b7f4-36a1171f2900" />
+ Añadir una nota (asociada a computo movil)
+<img width="336" height="611" alt="image" src="https://github.com/user-attachments/assets/000faa36-0d75-4f8e-bc9a-44b7bbfe84d8" />
+Nota agregada 
+<img width="306" height="690" alt="image" src="https://github.com/user-attachments/assets/76b185bd-88d1-4000-a4ca-87860ae18cb4" />
+Mas categorias 
+<img width="336" height="647" alt="image" src="https://github.com/user-attachments/assets/0a65a507-9bea-4bd5-9c77-1358a158150c" />
+Mas notas
+<img width="348" height="676" alt="image" src="https://github.com/user-attachments/assets/d4aac760-cb6f-4da2-8422-5ca7d8769fbb" />
+Mostrar solo una categoria (las de computo movil)
+<img width="331" height="725" alt="image" src="https://github.com/user-attachments/assets/92ef1acd-7768-4f3c-b316-664b4c1cf30c" />
+Mostrar con barra de busqueda con LIKE ("tarea 3")
+<img width="327" height="686" alt="image" src="https://github.com/user-attachments/assets/2866e874-b783-43eb-97e2-1c5e99912885" />
+
+
+
+
+
+
+
+
+
+ 
 
 
  
