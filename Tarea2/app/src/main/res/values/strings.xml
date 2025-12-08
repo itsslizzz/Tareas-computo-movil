@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Tarea2</string>
+    <string name="notebook">NoteBook</string>
+    <string name="bienvenido_a_tu_app_de_notas">Bienvenido a tu app de notas</string>
+    <string name="filtra_tus_notas_por_categoria">Filtra tus notas por categoria</string>
+    <string name="agregar_categoria">Agregar Categoria</string>
+    <string name="nombre">Nombre</string>
+    <string name="ejemplo_programacion">Ejemplo: Programacion</string>
+    <string name="agregar_nota">Agregar Nota</string>
+    <string name="titulo">Titulo</string>
+    <string name="contenido">Contenido</string>
+    <string name="ejemplo_tarea_profe_alexis">Ejemplo: Tarea profe Alexis</string>
+    <string name="ejemplo_realizar_ejercicios_1_2_y_3">Ejemplo: Realizar ejercicios 1,2 y 3</string>
+    <string name="fecha_de_creacion">Fecha de creacion</string>
+    <string name="selecciona_la_categoria">Selecciona la categoria</string>
+</resources>
