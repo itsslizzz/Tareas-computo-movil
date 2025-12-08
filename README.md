@@ -47,6 +47,7 @@ Permite:
  <img width="321" height="718" alt="image" src="https://github.com/user-attachments/assets/d2a4f6c8-1642-424b-816b-43ca07f4eeef" /> cambio realizado
  <img width="164" height="358" alt="image" src="https://github.com/user-attachments/assets/e0596274-9cd9-4e3a-b9c7-85e78e474c5b" /> borrar tarea de programacion
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Nombre del proyecto:Tarea 2 Notebook
 Breve descripción: Aplicación Android sencilla para crear categorias con sus notas 1:N
 Permite:
