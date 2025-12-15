@@ -160,7 +160,7 @@ Componentes Técnicos (MVC):
 - TaskController: Maneja la lógica de las tareas. Al realizar una acción (guardar, editar, borrar), llama automáticamente al HistoryController para registrar el evento.
 - HistoryController: Se encarga de guardar los logs de auditoría en segundo plano y de filtrar la lista para la vista de Historial.
 
-Se utiliza ExecutorService y Handler para realizar todas las operaciones de base de datos en segundo plano sin congelar la interfaz de usuario, ya que era algo que pasaba frecuentemente al momento de inter realizar algo. 
+Se utiliza ExecutorService y Handler para realizar todas las operaciones de base de datos en segundo plano sin congelar la interfaz de usuario, ya que era algo que pasaba frecuentemente al momento de intentar realizar algo. 
 
 
 
