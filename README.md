@@ -111,10 +111,60 @@ Mostrar solo una categoria (las de computo movil)
 Mostrar con barra de busqueda con LIKE ("tarea 3")
 <img width="327" height="686" alt="image" src="https://github.com/user-attachments/assets/2866e874-b783-43eb-97e2-1c5e99912885" />
 
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Nombre del proyecto: Tarea 3 - Action History Application
+Breve descripción: Aplicación Android sencilla para gestionar tareas personales con un sistema de auditoría de cambios.
+Permite:
+- Agregar nuevas tareas.
+
+- Ver la lista de tareas en tarjetas (RecyclerView).
+
+- Marcar una tarea como completada o pendiente.
+
+- Eliminar tareas de la base de datos.
+
+- Editar una tarea (nombre y descripción).
+
+- Visualizar un historial de acciones (Auditoría).
+
+- Filtrar el historial por fecha (Calendario) y tipo de acción (Crear, Actualizar, Eliminar).
+
+
+Uso de la aplicación: En la pantalla principal, hay un botón de Historial. Al pulsarlo, lleva a una nueva pantalla donde se listan todos los cambios realizados en la app. Cada registro muestra qué acción se hizo (Insertar, Actualizar o Eliminar), el nombre de la tarea afectada y la fecha/hora.
+El usuario puede filtrar estos registros seleccionando una fecha en el CalendarView o eligiendo un tipo de acción en el menú desplegable (Spinner).
+
+
+Estructura de la base de datos (Room):
+
+Table: Task
+int id (Primary Key, auto-generated)
+string task_description
+string task_title
+string created_at
+boolean is_completed (0 false, 1 true)
+
+Table: History (Nueva)
+int id (Primary Key, auto-generated)
+string action (Códigos internos: insert_task, update_task, delete_task)
+string details (Guarda el título de la tarea afectada)
+string created_at (Fecha y hora de la acción)
+
+Componentes Técnicos (MVC):
+- TaskDao: Métodos estándar CRUD (insert, update, delete, getAllTasks).
+- HistoryDao: Métodos para consultar el historial ordenado por fecha descendente.
+- TaskController: Maneja la lógica de las tareas. Al realizar una acción (guardar, editar, borrar), llama automáticamente al HistoryController para registrar el evento.
+- HistoryController: Se encarga de guardar los logs de auditoría en segundo plano y de filtrar la lista para la vista de Historial.
+
+Se utiliza ExecutorService y Handler para realizar todas las operaciones de base de datos en segundo plano sin congelar la interfaz de usuario, ya que era algo que pasaba frecuentemente al momento de inter realizar algo. 
 
 
 
-
+<img width="396" height="787" alt="image" src="https://github.com/user-attachments/assets/849f3473-9178-447d-b1cb-e8610f9782f9" />
+<img width="375" height="782" alt="image" src="https://github.com/user-attachments/assets/2881fda7-5ffd-48d0-9f87-670e02a292fb" />
+<img width="372" height="783" alt="image" src="https://github.com/user-attachments/assets/1040b191-de3f-44a7-ae03-eebfcbefd145" /> filtrar por eliminar
+<img width="379" height="778" alt="image" src="https://github.com/user-attachments/assets/7637f7e7-20a4-4852-93f7-dd684373d41f" />  filtrar por actualizar
+<img width="355" height="776" alt="image" src="https://github.com/user-attachments/assets/7a7fcfe8-8083-4442-b80e-7b2a4712737a" /> filtrar por un dia donde no se hizo una accion
 
 
 
