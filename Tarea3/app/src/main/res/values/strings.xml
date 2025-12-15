@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Tarea1</string>
+    <string name="bienvenid">Bienvenid@</string>
+    <string name="titulo">Titulo:</string>
+    <string name="descripcion">Descripcion:</string>
+    <string name="nombre">Nombre</string>
+    <string name="agrega_nombre_a_la_tarea">Agrega nombre a la tarea</string>
+    <string name="descripcionn">Descripcion</string>
+    <string name="ejemplo_tarea_programacion">Ejemplo: Tarea Programacion</string>
+    <string name="ejemplo_elaborar_ejercicios_1_y_2">Ejemplo: Elaborar ejercicios 1 y 2</string>
+    <string name="agregar_tarea">AGREGAR TAREA</string>
+    <string name="historial_de_tareas">Historial de tareas</string>
+    <string name="filtrar_historial_por_tipo_de_accion">Filtrar historial por tipo de accion:</string>
+    <string name="filtrar_por_fecha">Filtrar por fecha:</string>
+    <string name="accion">Accion:</string>
+    <string name="task_afectada">Task afectada:</string>
+</resources>
