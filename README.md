@@ -1,5 +1,7 @@
 Repo con las tareas:
 - Tarea1 (la primera de las 3 tareas, con fecha de entrega para 30/11)
+- Tarea 2
+- Tarea 3
 - Tarea_Formulario
 - Tipos de diseño
 - imc
@@ -114,7 +116,9 @@ Mostrar con barra de busqueda con LIKE ("tarea 3")
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 
 Nombre del proyecto: Tarea 3 - Action History Application
+
 Breve descripción: Aplicación Android sencilla para gestionar tareas personales con un sistema de auditoría de cambios.
+
 Permite:
 - Agregar nuevas tareas.
 
